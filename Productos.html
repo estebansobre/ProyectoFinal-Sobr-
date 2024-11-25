@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Mi Tienda</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Monoton&family=Rock+3D&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="./assets/logo1.jpg" alt="Logo" class="logo">
+        <h1>diseño y arte</h1>
+        <nav>
+            <a href="./index.html">Inicio</a>
+            <a href="./somos.html">Somos</a>
+            <a href="./productos.html">Productos</a>
+        </nav>
+
+      
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+                <img src="assets/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="assets/gorjeo (1).png" alt="Twitter">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="assets/instagram.png" alt="Instagram">
+            </a>
+        </div>
+    </header>
+
+    <h2>-Todos nuestros productos-</h2>
+    <div id="productos">
+        
+        <div class="producto">
+            <img src="./assets/2cuerpos.jpg" alt="Sillon de 2 cuerpos">
+            <h3>Sillon de dos cuerpos</h3>
+            <h4>$545000</h4>
+            <button onclick="agregarAlCarrito('Sillon de dos cuerpos', 545000, './assets/2cuerpos.jpg')">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./assets/copaceramica.jpg" alt="Copas de cerámica">
+            <h3>Copas de cerámica</h3>
+            <h4>$19990</h4>
+            <button onclick="agregarAlCarrito('Copas de cerámica', 19990, './assets/copaceramica.jpg')">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./assets/rackvioleta.jpg" alt="Rack violeta">
+            <h3>Rack brutalista</h3>
+            <h4>$35990</h4>
+            <button onclick="agregarAlCarrito('Rack brutalista', 35990, './assets/rackvioleta.jpg')">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./assets/1cuerpofrontral.jpg" alt="Sillon de 1 cuerpo">
+            <h3>Sillon de 1 cuerpo</h3>
+            <h4>$24999</h4>
+            <button onclick="agregarAlCarrito('Sillon de 1 cuerpo', 24999, './assets/1cuerpofrontral.jpg')">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./assets/3cuerpos.jpg" alt="Sillon de 3 cuerpos">
+            <h3>Sillon de 3 cuerpos</h3>
+            <h4>$789000</h4>
+            <button onclick="agregarAlCarrito('Sillon de 3 cuerpos', 789000, './assets/3cuerpos.jpg')">Añadir al carrito</button>
+        </div>
+        <div class="producto">
+            <img src="./assets/mueblemono.jpg" alt="Rack intervenido">
+            <h3>Rack intervenido</h3>
+            <h4>$214999</h4>
+            <button onclick="agregarAlCarrito('Rack intervenido', 214999, './assets/mueblemono.jpg')">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <p>-envíos a todo el país-</p>
+
+      
+       <div id="carrito">
+        <h2>Mi carrito</h2>
+        <ul id="listaCarrito"></ul>
+        <p id="total"></p>
+        <button onclick="finalizarCompra()">Finalizar Compra</button>
+        <p id="carrito-vacio" style="display: none;">El carrito está vacío.</p>
+    </div>
+
+<div id="alerta" class="alerta"></div>
+    <script src="app.js"></script>
+   
+
+</body>
+<footer>
+    ROSARIO-SANTA FE
+</footer>
+</html>

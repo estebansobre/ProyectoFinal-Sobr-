@@ -1,0 +1,33 @@
+[
+    {
+      "nombre": "Sillon de dos cuerpos",
+      "precio": 545000,
+      "imagen": "./assets/2cuerpos.jpg"
+    },
+    {
+      "nombre": "Copas de cerámica",
+      "precio": 19990,
+      "imagen": "./assets/copaceramica.jpg"
+    },
+    {
+      "nombre": "Rack brutalista",
+      "precio": 35990,
+      "imagen": "./assets/rackvioleta.jpg"
+    },
+    {
+      "nombre": "Sillon de 1 cuerpo",
+      "precio": 24999,
+      "imagen": "./assets/1cuerpofrontral.jpg"
+    },
+    {
+      "nombre": "Sillon de 3 cuerpos",
+      "precio": 789000,
+      "imagen": "./assets/3cuerpos.jpg"
+    },
+    {
+      "nombre": "Rack intervenido",
+      "precio": 214999,
+      "imagen": "./assets/mueblemono.jpg"
+    }
+  ]
+  

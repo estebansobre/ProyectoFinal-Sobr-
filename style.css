@@ -1,0 +1,316 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-image: url(./assets/footerpng.jpg);
+    color: #333;
+    padding: 10px;
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    position: relative;
+    border-bottom: #000000;
+}
+
+h1 {
+    color: #000000;
+    margin: 0;
+    font-size: 3em;
+    padding-left: 10px;
+    font-family: "Monoton", sans-serif;
+}
+h2{
+        font-family: "Rock 3D", system-ui;
+        background-color: black;
+        color: #ffffff;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 4em;
+        text-align: center;
+        border-radius: 40px;
+      }
+p{
+  background-color: #000000;  
+  color: darkgoldenrod;
+  font-size: 3em;
+  text-align: center;
+}
+      
+
+
+
+.logo {
+    max-height: 30%;
+    width: 20%;
+    border-radius: 250px;
+}
+
+nav {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(196, 187, 155);
+}
+
+.social-icons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2c82ea;
+}
+
+
+#listaCarrito {
+    list-style-type: none;
+    padding: 0;
+}
+
+#listaCarrito li {
+    background-color: #c6c6c6;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#listaCarrito button {
+    background-color: #f44336;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+#listaCarrito button:hover {
+    background-color: #e53935;
+}
+
+#total {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+#carrito-vacio {
+    font-size: 18px;
+    color: #e76f51;
+    font-weight: bold;
+    display: none;
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.alerta {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ff4d4d;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+   
+    nav {
+        gap: 1.5em;
+    }
+
+    
+    .logo {
+        width: 25%;
+    }
+
+  
+    #productos {
+        justify-content: space-between;
+    }
+
+    .producto {
+        width: 45%;
+    }
+
+    button {
+        padding: 8px;
+    }
+
+   
+    #listaCarrito li {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px) {
+    
+    nav {
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 1.2em;
+    }
+
+  
+    #productos {
+        justify-content: center;
+    }
+
+    .producto {
+        width: 80%;
+    }
+
+    
+    #total {
+        font-size: 1.1em;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    
+    h1 {
+        font-size: 2em;
+    }
+
+ 
+    .logo {
+        width: 35%;
+    }
+
+    nav a {
+        font-size: 1.2em;
+    }
+
+   
+    .producto {
+        width: 100%;
+        padding: 10px;
+    }
+
+
+    #listaCarrito li {
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+    }
+
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+
+    #total {
+        font-size: 1.2em;
+    }
+
+    #carrito-vacio {
+        font-size: 16px;
+    }
+}
